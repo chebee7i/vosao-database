@@ -76,6 +76,15 @@ public class DatabaseVelocityPlugin extends AbstractVelocityPlugin {
 	  return query;
 	}
 
+    public Query addSort(Query query, String col, String direction) {
+      Query.SortDirection dir = null;
+      if (direction.equals("ASCENDING")) dir = Query.SortDirection.ASCENDING;
+      else if (direction.equals("DESCENDING")) dir = Query.SortDirection.DESCENDING;
+      if (dir == null) return null;
+      query.addSort(col, dir);
+      return query;
+    }	
+
 	public long insert(String table, List<String> cols, List<Object> data) {
     Entity e = new Entity(table);
     for(int col=0;col<cols.size();col++) {
