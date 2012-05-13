@@ -1,0 +1,11 @@
+<vosao-plugin>
+    <name>database</name>
+    <title>$database.title</title>
+    <version>0.8</version>
+    <description>$database.description</description>
+    <website>vosao-database.sf.net</website>
+    <entry-point-class>
+        org.vosao.plugins.database.DatabaseEntryPoint
+    </entry-point-class>
+    <plugin-config-url>config.html</plugin-config-url>
+</vosao-plugin>
