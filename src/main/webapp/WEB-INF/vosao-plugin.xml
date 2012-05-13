@@ -1,7 +1,7 @@
 <vosao-plugin>
     <name>database</name>
     <title>$database.title</title>
-    <version>0.8</version>
+    <version>0.9</version>
     <description>$database.description</description>
     <website>vosao-database.sf.net</website>
     <entry-point-class>
